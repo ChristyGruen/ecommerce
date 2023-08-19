@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
  console.log('========================start of log1==========================')
   console.log(products);
   // res.send("<h1>ProductData accessed!</h1>")
-  res.send(products)
+  res.send(products);
  }catch(err){
   console.log(err);
   res.status(500).json(err);
