@@ -61,7 +61,7 @@ router.get('/:id', async (req, res) => {
 
 
 
-////////////////this creates two entries into the db
+////////////////this used to create two entries into the product table
 
 // create new product
 router.post('/', async(req, res) => {
