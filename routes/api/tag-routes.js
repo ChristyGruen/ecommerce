@@ -62,12 +62,14 @@ router.post('/', async(req, res) => {
       res.status(200).json(tag);
     })
     .then((tagProductIds) => res.status(200).json(tagProductIds))
-    .catch((err) => {
-      console.log(err);
-      res.status(400).json(err);
-    });
+    // second res.status might be causing problems
+   // https://www.datainfinities.com/43/cant-set-headers-after-they-are-sent-to-the-client
+    // .catch((err) => {
+    //   console.log(err);
+    //   res.status(400).json(err);
+    // });
     ////////////////end chris
-    res.status(200).json(tagData);
+    // res.status(200).json(tagData);
   } catch(err){
     console.log(err),
     res.status(400).json(err);
