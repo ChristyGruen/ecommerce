@@ -5,7 +5,7 @@
 
   ## Description
   
-      The eCommerce application is a back end built for an e-commerce site using Express.js, Sequelize and mySQL.  
+The eCommerce application is a back end built for an e-commerce site using Express.js, Sequelize and mySQL.  
 
   ## Table of Contents
   [Installation Instructions](#installation-instructions)<br>
